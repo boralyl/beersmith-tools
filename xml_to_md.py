@@ -1,6 +1,6 @@
 import sys
 
-from pybeerxml import Parser
+from pybeerxml.parser import Parser
 
 
 LITERS_TO_GALLON = 0.2641720524
@@ -65,7 +65,7 @@ tags:
 **Batch Size (fermenter)**: {recipe.display_batch_size}<br />
 **Estimated OG**: {recipe.est_og}<br />
 **Estimated Color**: {recipe.est_color}<br />
-**Estimated IBU**: {round(recipe.ibu, 2)} ({recipe.ibu_method})<br />
+**Estimated IBU**: {recipe.ibu} ({recipe.ibu_method})<br />
 **Estima.ed ABV**: {recipe.est_abv}<br />
 **Brewhouse Efficiency**: {recipe.efficiency}%<br />
 **Boil Time**: {int(recipe.boil_time)} minutes<br />
