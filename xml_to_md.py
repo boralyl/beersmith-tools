@@ -1,5 +1,6 @@
 import sys
 
+import typer
 from pybeerxml.parser import Parser
 
 
@@ -16,7 +17,10 @@ def hop_use(use: str) -> str:
     return use
 
 
-def main(beer_xml_path: str):
+def main(
+    beer_xml_path: str = typer.Argument(..., help="Path to beer xml file")
+) -> None:
+    """Outputs markdown from a beer xml file."""
     parser = Parser()
     recipe = parser.parse(beer_xml_path)[0]
     ingredients_rows = []
@@ -88,8 +92,8 @@ tags:
 
 {recipe.notes}
     """
-    return md
+    typer.echo(md)
 
 
 if __name__ == "__main__":
-    print(main(sys.argv[1]))
+    typer.run(main)

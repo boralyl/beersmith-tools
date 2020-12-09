@@ -6,7 +6,15 @@
 #
 --trusted-host pypi.brewnotice.com
 
+click==7.1.2 \
+    --hash=sha256:d2b5255c7c6349bc1bd1e59e08cd12acbbd63ce649f2588755783aa94dfb6b1a \
+    --hash=sha256:dacca89f4bfadd5de3d7489b7c8a566eee0d3676333fbb50030263894c38c0dc \
+    # via typer
 pybeerxml==2.1.2 \
     --hash=sha256:cd769eb03a042f83660985b0c305df800633ba813255b6eb750c50b37eec0694 \
     --hash=sha256:d81eb70d893961d642f652460a5577e162fc65b18954cee7dc1580f93b9c3087 \
+    # via -r requirements.in
+typer==0.3.2 \
+    --hash=sha256:5455d750122cff96745b0dec87368f56d023725a7ebc9d2e54dd23dc86816303 \
+    --hash=sha256:ba58b920ce851b12a2d790143009fa00ac1d05b3ff3257061ff69dbdfc3d161b \
     # via -r requirements.in
