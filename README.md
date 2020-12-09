@@ -2,6 +2,21 @@
 
 Tools for working with beersmith data.
 
+## Tools
+
+### Convert a Beer XML file to Markdown
+
+```bash
+python xml_to_md.py --help
+Usage: xml_to_md.py [OPTIONS] BEER_XML_PATH
+
+  Outputs markdown from a beer xml file.
+
+Arguments:
+  BEER_XML_PATH  Path to beer xml file  [required]
+
+```
+
 ## Installing Python Requirements
 
 First install `pip-tools`.
@@ -35,4 +50,3 @@ Or a single package:
 ```
 $ pip-compile --upgrade-package fastapi requirements.in
 ```
-
