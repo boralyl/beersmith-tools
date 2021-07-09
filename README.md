@@ -1,10 +1,12 @@
 # beersmith-tools
 
-Tools for working with beersmith data.
+Tools for working with beersmith beer XML data.
 
 ## Tools
 
 ### Convert a Beer XML file to Markdown
+
+First export your recipe from beersmith in the Beer XML format.
 
 ```bash
 $ python xml_to_md.py --help
